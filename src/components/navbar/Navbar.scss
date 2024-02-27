@@ -1,0 +1,73 @@
+.navbar {
+    transition: all .3s ease;
+    position: fixed;
+    z-index: 1;
+    color: black;
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    /* padding: 30px; */
+    color: white;
+    align-items: center;
+  
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+  
+      &__soc-meds {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+  
+        a {
+          display: flex;
+          align-items: center;
+        }
+  
+        img {
+          cursor: pointer;
+          transition: all .2s ease;
+  
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+  
+      &__menus {
+        display: flex;
+        flex-direction: row;
+  
+        & > ul {
+          display: flex;
+          flex-direction: row;
+          gap: 36px;
+          list-style: none;
+          padding: 0;
+  
+          a {
+            border: none;
+            background: none;
+            color: white;
+            font-size: 16px;
+            padding: 0;
+            cursor: pointer;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+      }
+  
+      p { 
+        margin: 0;
+      }
+    }
+  }
+
+  .navbar.dark {
+    background: black;
+  }
